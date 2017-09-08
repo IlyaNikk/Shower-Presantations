@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>Чат для технической поддержки</h1>
+	</header>
+
+	<section class="slide" id="cover">
+		<h2>Чат для технической поддержки</h2>
+		<p>Булавинцев Илья</p>
+		<p>Черемисин Сергей</p>
+		<p>Никитин Илья</p>
+		<figure>
+			<img src="pictures/delivery.png" alt="Hands on the orange typewriter in a park">
+		</figure>
+		<style>
+			#cover h2 {
+				margin:30px 0 0;
+				/*color:#FFF;*/
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				/*color:#FFF;*/
+				font-style:italic;
+				font-size:20px;
+				}
+				#cover p a {
+					color:#FFF;
+					}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Постановка задачи</h2>
+		<ol>
+			<li>Чат для общения клиента с технической поддержкой</li>
+			<li>Чат должен быть совмешен с ситемой трекинга задач</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Архитектура</h2>
+		<figure>
+			<img class="cover" src="pictures/arch.jpg">
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>Используемые технологии</h2>
+		<figure>
+			<img src="pictures/tech.jpg">
+		</figure>
+	</section>
+
+	<section class="slide" id="schema">
+		<h2>Схема базы данных</h2>
+		<figure>
+			<img class="place" src="pictures/schema.jpg">
+		</figure>
+		<style>
+			#schema figure img{
+				padding-top: 6em;
+				height: auto;
+				width: auto;
+				max-width: 30em;
+				max-height: 30em;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>План работ</h2>
+		<ol>
+			<li>15 сентября - Тикетный сервис</li>
+			<li>22 сентября - Входящий тикетный сервис</li>
+			<li>29 сентября - Исходящий тикетный сервис</li>
+			<li>6 октября - Сервис мессенджер</li>
+			<li>13 октября - Входящий сервис мессенждер</li>
+			<li>20 октября - Исходящий сервис мессенджер</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Система монетизации</h2>
+		<ol>
+			<li>Урезанный функционал</li>
+			<li>Ограниченное количесвто операторов</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Спасибо за внимние!</h2>
+	</section>
+
+	<div class="progress"></div>
+
+	<script src="node_modules/shower-core/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
