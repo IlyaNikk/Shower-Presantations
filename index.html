@@ -14,12 +14,11 @@
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>Чат для технической поддержки</h2>
-		<p>Булавинцев Илья</p>
-		<p>Черемисин Сергей</p>
+		<h2>Курсовая работа по дисциплине</h2>
+		<h4>Теоретические основы конструирования и надежности ЭА</h4>
 		<p>Никитин Илья</p>
 		<figure>
-			<img src="pictures/delivery.png" alt="Hands on the orange typewriter in a park">
+			<img src="pictures/ceh4.jpg">
 		</figure>
 		<style>
 			#cover h2 {
@@ -38,33 +37,90 @@
 				#cover p a {
 					color:#FFF;
 					}
+				#cover figure {
+					display: flex;
+					justify-content: center;
+				}
+			#cover img {
+				height: 300px;
+				width: 300px;
+			}
 		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Постановка задачи</h2>
+		<h2>Техническое задание</h2>
+		<h4>Разработать и осуществить сборку электронного компаса, обладающего следующими функциями:</h4>
 		<ol>
-			<li>Чат для общения клиента с технической поддержкой</li>
-			<li>Чат должен быть совмешен с ситемой трекинга задач</li>
+			<li>Питание от внутреннего источника</li>
+			<li>Устройство находится в корпусе кубсата</li>
+			<li>Присутствует экран, обеспечивающий защиту от радиации</li>
 		</ol>
 	</section>
 
 	<section class="slide">
-		<h2>Архитектура</h2>
+		<h2>Техническое задание</h2>
+		<h4>Условия эксплуатации:</h4>
+		<ol>
+			<li>Температура окружающей среды: -14 … +71 0С</li>
+			<li>Относительная влажность 20%-80% без конденсата.</li>
+			<li>Уровень вибрации – 3 ДБ, период 3мин. по осям X, Y, Z</li>
+		</ol>
+	</section>
+
+	<section class="slide" id="princ">
+		<h2>Принципиальная схема</h2>
 		<figure>
-			<img class="cover" src="pictures/arch.jpg">
+			<img src="pictures/princ.jpg">
 		</figure>
+
+		<style>
+			#princ figure img{
+				height: 450px;
+				width: 600px;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="pcb">
+		<h2>Печатная плата</h2>
+		<figure>
+			<img src="pictures/pcb.jpg">
+		</figure>
+
+		<style>
+			#pcb figure img{
+				height: 450px;
+				width: 600px;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="box">
+		<h2>Корпус</h2>
+		<figure>
+			<img src="pictures/box.JPG">
+		</figure>
+
+		<style>
+			#box figure img{
+				height: 480px;
+				width: 350px;
+			}
+		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Используемые технологии</h2>
-		<figure>
-			<img src="pictures/tech.jpg">
-		</figure>
+		<h2>Температурный блок</h2>
+		<h4>Расчет по Парфенову:</h4>
+		<p>Температура теплоносителя: 71 С</p>
+		<p>Перегрев корпуса блока в первом приближении: 0.104 С</p>
+		<p>Перегрев корпуса блока во втором приближении: 31,62 С</p>
 	</section>
 
 	<section class="slide" id="schema">
-		<h2>Схема базы данных</h2>
+		<h2>Температурный блок</h2>
+		<h4>Моделирование в CAE</h4>
 		<figure>
 			<img class="place" src="pictures/schema.jpg">
 		</figure>
@@ -79,28 +135,300 @@
 		</style>
 	</section>
 
+	<section class="slide" id="mech-js">
+		<h2>Механический блок</h2>
+		<figure>
+			<img src="pictures/mech.JPG">
+		</figure>
+
+		<style>
+			#mech-js figure img{
+				height: 450px;
+				width: 550px;
+			}
+		</style>
+	</section>
+
+
 	<section class="slide">
-		<h2>План работ</h2>
-		<ol>
-			<li>15 сентября - Тикетный сервис</li>
-			<li>22 сентября - Входящий тикетный сервис</li>
-			<li>29 сентября - Исходящий тикетный сервис</li>
-			<li>6 октября - Сервис мессенджер</li>
-			<li>13 октября - Входящий сервис мессенждер</li>
-			<li>20 октября - Исходящий сервис мессенджер</li>
-		</ol>
+		<h2>Механический блок</h2>
+		<div id="mech-js-cae1">
+			<figure>
+				<img src="pictures/mech-cae1.JPG">
+				<span>1606 Гц</span>
+			</figure>
+			<figure>
+				<img src="pictures/mech-cae2.JPG">
+				<span>2286 Гц</span>
+			</figure>
+		</div>
+
+		<style>
+			#mech-js-cae1 {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#mech-js-cae1 figure img{
+				height: 280px;
+				width: 400px;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="mech-js-real1">
+		<h2>Испытания на стенде (без корпуса)</h2>
+		<figure>
+			<img src="pictures/no%20box.jpg">
+		</figure>
+
+		<style>
+			#mech-js-real1 figure img{
+				height: 400px;
+				width: 300px;
+			}
+		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Система монетизации</h2>
-		<ol>
-			<li>Урезанный функционал</li>
-			<li>Ограниченное количесвто операторов</li>
-		</ol>
+		<h2>Испытания на стенде (без корпуса)</h2>
+		<div class="mech-js-real2">
+			<figure>
+				<img src="pictures/on%20display%20no%20box.png">
+			</figure>
+			<div>
+				<span>Резонансные частоты на дисплее</span>
+				<ul>
+					<li>57,5 Гц</li>
+					<li>148 Гц</li>
+					<li>330 Гц</li>
+				</ul>
+			</div>
+		</div>
+		<style>
+			.mech-js-real2 {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			.mech-js-real2 figure img{
+				height: 400px;
+				width: 500px;
+			}
+
+			.mech-js-real2 div{
+				width: 200px;
+			}
+		</style>
 	</section>
 
 	<section class="slide">
-		<h2>Спасибо за внимние!</h2>
+		<h2>Испытания на стенде (без корпуса)</h2>
+		<div class="mech-js-real2">
+			<figure>
+				<img src="pictures/on%20micro%20no%20box.png">
+			</figure>
+			<div>
+				<span>Резонансные частоты на микросхеме</span>
+				<ul>
+					<li>140 Гц</li>
+					<li>303 Гц</li>
+					<li>328 Гц</li>
+					<li>818 Гц</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Испытания на стенде (без корпуса)</h2>
+		<div class="mech-js-real2">
+			<figure>
+				<img src="pictures/on%20pcb%20no%20box.png">
+			</figure>
+			<div>
+				<span>Резонансные частоты на плате</span>
+				<ul>
+					<li>253 Гц</li>
+					<li>705 Гц</li>
+					<li>950 Гц</li>
+					<li>1,11 кГц</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide" id="mech-js-real2">
+		<h2>Испытания на стенде (в корпусе)</h2>
+		<figure>
+			<img src="pictures/use%20box.jpg">
+		</figure>
+
+		<style>
+			#mech-js-real2 figure img{
+				height: 400px;
+				width: 300px;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Испытания на стенде (в корпусе)</h2>
+		<div class="mech-js-real2">
+			<figure>
+				<img src="pictures/on%20box.png">
+			</figure>
+			<div>
+				<span>Резонансные частоты на корпусе</span>
+				<ul>
+					<li>57,5 Гц</li>
+					<li>150 Гц</li>
+					<li>168 Гц</li>
+					<li>225 Гц</li>
+					<li>393 Гц</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Испытания на стенде (в корпусе)</h2>
+		<div class="mech-js-real2">
+			<figure>
+				<img src="pictures/on%20diplay%20use%20box.png">
+			</figure>
+			<div>
+				<span>Резонансные частоты на дисплее</span>
+				<ul>
+					<li>55 Гц</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Испытания на стенде (в корпусе)</h2>
+		<div class="mech-js-real2">
+			<figure>
+				<img src="pictures/bottom%20pcb%20use%20box.png">
+			</figure>
+			<div>
+				<span>Резонансные частоты на плате(внизу)</span>
+				<ul>
+					<li>153 Гц</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Испытания на стенде (в корпусе)</h2>
+		<div class="mech-js-real2">
+			<figure>
+				<img src="pictures/left%20pcb%20use%20box.png">
+			</figure>
+			<div>
+				<span>Резонансные частоты на плате(сбоку)</span>
+				<ul>
+					<li>103 Гц</li>
+					<li>160 Гц</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Испытания на стенде (в корпусе)</h2>
+		<div class="mech-js-real2">
+			<figure>
+				<img src="pictures/sinus.png">
+			</figure>
+			<div>
+				<span>Резонансные частоты на дисплее</span>
+				<ul>
+					<li>102 Гц</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<h2>Механический блок</h2>
+		<h4>Сравнение собственных частот</h4>
+		<table>
+			<tr><td>Частота по Парфенову</td><td>Частота по CAE</td><td>Частота по испытаниям</td></tr>
+			<tr><td>407 Гц</td><td>1606 Гц</td><td>153 Гц</td></tr>
+		</table>
+	</section>
+
+	<section class="slide">
+		<h2>Механический блок</h2>
+		<h4>Сравнение собственных частот</h4>
+		<div>Анализ результатов: причинами такого расхождения вижу в следующем:
+			расчет по Парфенову не учитывает характеристики размещение элементов на плате, также некторые значения являются прибилженными(см коэффициент формы колебания)
+			расчет в CAE произвидился при некоторых допущениях: магнитометр и дисплей были заменены на параллелипипеды, что повлияло на итоговый расчет</div>
+	</section>
+
+	<section class="slide">
+		<h2>Выводы по механическому блоку</h2>
+		<ol>
+			<li>Наличие корпуса улучшает механические характеристики</li>
+			<li>Считаю, что на результат частоты по расчета является очень приближенным</li>
+		</ol>
+	</section>
+
+
+	<section class="slide" id="0">
+		<h2>Выводы по работе:</h2>
+		<h4>Соотвествие ТЗ:</h4>
+		<figure>
+			<img src="pictures/0.jpg"/>
+		</figure>
+
+		<style>
+			#0 img{
+				height: 300px;
+				width: 300px;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Выводы по работе:</h2>
+		<ul>
+			<li>При разработке корпуса не учитывал матреиал, из которого он будет изгововлен, в результате в некоторых местах корпус оказался хрупким</li>
+			<li>Решение: увеличить ширину стенок, в местах крпления сделать небольшую поддержку</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Выводы по работе:</h2>
+		<ul>
+			<li>Погрешность печати и печать маленьких деталей</li>
+			<li>Решение: учитывать погрешность и не использовать маленькие детали (~ 1мм)</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Выводы по работе:</h2>
+		<ul>
+			<li>Проблемы, свзяанные с плохим проектированием корпуса, которые появились после печати</li>
+			<li>Решение: использовать ребра жесткости для фиксации стыка элементов, уменьшит диаметр закругления</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Выводы по работе:</h2>
+		<ul>
+			<li>Научился проводить исследования в CAE</li>
+			<li>Получил прототип, ошибки которого помогут сделать диплом лучше</li>
+		</ul>
+	</section>
+
+
+	<section class="slide">
+		<h2>Спасибо за внимание!</h2>
 	</section>
 
 	<div class="progress"></div>
